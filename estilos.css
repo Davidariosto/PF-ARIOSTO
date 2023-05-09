@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Merriweather:wght@700&family=Roboto+Slab&display=swap');
+/*
+font-family: 'Alkatra', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Roboto Slab', serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 130px;
+    padding: 35px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+body{
+    background-color: gray;
+}
+h1{
+    font-size: 35px;
+    font-family: 'Merriweather', serif;
+    text-shadow: 3px 3px 5px grey;
+   
+}
+h1 span{
+    font-style: italic;
+    text-align: center;
+}
+.LogoHeader {
+    width: 120px;
+}
+
+.instagram {
+    height: 35px;
+    width: auto;
+}
+.InstagramTexto{
+    font-family: 'Merriweather', serif;
+    text-decoration: none;      
+}
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.barra {
+    background-color: beige;
+}
+.nav-item{
+    font-size: 20px;  
+}
+.MainInicio{
+    background-color: grey;
+}
+.foto {
+margin-left: 25%;
+margin-right: 25%;
+}
+#carouselExampleIndicators {
+    background-color: black;
+
+}
+.TextoInicio{
+    background-color: beige;
+    margin: 40px;
+    padding: 20px;
+    box-shadow: 3px 3px 3px black;
+}
+section h2 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    width: 100%;
+    
+}
+section p {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family:'Times New Roman', Times;
+}
+.FooterInicio{
+    background-color: aquamarine;
+    
+}
+
+footer h3{
+    text-align: center;
+    padding: 30px;    
+}
+.SectionProductos{
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-around;
+}
+.ImagenProductos {   
+    height: 350px;
+    width: auto;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.InfoTazas {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+article p {
+    width: 100%;
+    background-color: beige;
+   padding: 10px;
+   font-family: 'Merriweather', serif;
+   text-align: center;
+   border: 2px solid black;
+   border-radius: 5px;
+}
+.ImagenTorno{
+    text-align: center;
+}
+.Torno {
+    height: auto;
+    width: 80%;
+    
+}
+.VideoTorno{
+    height: 450px;    
+    margin-top: 20px;
+    text-align: center;
+}
+.SobreMi{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.TituloSobreMi{
+    height: 50px;
+    width: 100%;
+}
+.ImgSobreMi {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 15px;
+    border: 3px solid black;
+    border-radius: 5px;   
+}
+
+
+
+
+
+
+@media only screen and (max-width: 720px){
+    header a{
+        display: none;
+    }
+    .foto{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    #carouselExampleIndicators {
+        background-color: rgb(0, 0, 0);
+    }
+    .col-6 {
+        max-width: 100%;
+    }
+    .ImagenProductos{
+        height: 300px;
+        width: 100%;
+    }
+    iframe {
+        height: 250px;
+        width: 80%;
+    }
+    .SobreMi{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }    
+   
+} 
+@media only screen and (max-width: 420px) {
+    .TextoInicio{
+        
+        margin: 0px;
+        padding: 10px;
+        border-top: 2px solid gray;
+    }
+
+    .ImgSobreMi {
+        height: 200px;
+        width: auto;
+        margin-bottom: 15px;
+        border: 3px solid black;
+        border-radius: 5px;   
+    }
+    .ImagenProductos{
+        height: 150px;
+        width: 100%;
+    }
+    .item1{
+        margin-top: 35px;
+    }
+    .item2{
+        margin-top: 35px;
+    }  
+    
+    textarea{ 
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 360px){
+    .ImagenProductos{
+        height: 250px;
+        width: 100%;
+    }
+    .item3 {
+        height: 200px;
+    }
+    section h2 {
+        font-size: 22px;
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        padding-bottom: 20px;
+        text-decoration: underline;
+        width: 100%;
+        
+    }
+    section p {
+        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family:'Times New Roman', Times;
+    }
+    .iframe {
+        height: 250px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
