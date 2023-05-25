@@ -26,6 +26,9 @@ h1 {
   font-size: 35px;
   font-family: "Merriweather", serif;
   text-shadow: 3px 3px 5px grey;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
 h1 span {
@@ -35,18 +38,36 @@ h1 span {
 
 .LogoHeader {
   width: 120px;
+  animation-name: aparecer;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
 .instagram {
   height: 35px;
   width: auto;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
 .InstagramTexto {
   font-family: "Merriweather", serif;
   text-decoration: none;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .navbar-nav {
   width: 100%;
   display: flex;
@@ -114,11 +135,16 @@ footer h3 {
 }
 
 .ImagenProductos {
-  height: 350px;
+  height: 300px;
   width: auto;
   margin-top: 10px;
   border: 2px solid black;
   border-radius: 10px;
+  transition: transform 1.7s;
+}
+
+.ImagenProductos:hover {
+  transform: scale(1.2);
 }
 
 .InfoTazas {

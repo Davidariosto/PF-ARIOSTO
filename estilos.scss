@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Merriweather:wght@700&family=Roboto+Slab&display=swap');
+
 /*
 font-family: 'Alkatra', cursive;
 font-family: 'Merriweather', serif;
 font-family: 'Roboto Slab', serif;
 */
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
+
 header {
     height: 130px;
     padding: 35px;
@@ -17,178 +20,241 @@ header {
     justify-content: space-between;
 
 }
-body{
+
+body {
     background-color: gray;
 }
-h1{
+
+h1 {
     font-size: 35px;
     font-family: 'Merriweather', serif;
     text-shadow: 3px 3px 5px grey;
-   
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
-h1 span{
+
+h1 span {
     font-style: italic;
     text-align: center;
 }
+
 .LogoHeader {
     width: 120px;
+    animation-name: aparecer;
+    animation-delay: 0s;
+    animation-duration: 2s;
+
+    animation-iteration-count: 1;
 }
 
 .instagram {
     height: 35px;
     width: auto;
+    animation-name: aparecer;
+    animation-duration: 2s;
+
+    animation-iteration-count: 1;
 }
-.InstagramTexto{
+
+.InstagramTexto {
     font-family: 'Merriweather', serif;
-    text-decoration: none;      
+    text-decoration: none;
+    animation-name: aparecer;
+    animation-duration: 2s;
+
+    animation-iteration-count: 1;
 }
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .navbar-nav {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
+
 .barra {
     background-color: beige;
 }
-.nav-item{
-    font-size: 20px;  
+
+.nav-item {
+    font-size: 20px;
 }
-.MainInicio{
+
+.MainInicio {
     background-color: grey;
 }
+
 .foto {
-margin-left: 25%;
-margin-right: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
+
 #carouselExampleIndicators {
     background-color: black;
 
 }
-.TextoInicio{
+
+.TextoInicio {
     background-color: beige;
     margin: 40px;
     padding: 20px;
     box-shadow: 3px 3px 3px black;
 }
+
 section h2 {
     text-align: center;
     font-family: 'Merriweather', serif;
     padding-bottom: 20px;
     text-decoration: underline;
     width: 100%;
-    
+
 }
+
 section p {
     font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    font-family:'Times New Roman', Times;
-}
-.FooterInicio{
-    background-color: aquamarine;
-    
+    font-family: 'Times New Roman', Times;
 }
 
-footer h3{
-    text-align: center;
-    padding: 30px;    
+.FooterInicio {
+    background-color: aquamarine;
+
 }
-.SectionProductos{
+
+footer h3 {
+    text-align: center;
+    padding: 30px;
+}
+
+.SectionProductos {
     background-color: gray;
     padding: 20px;
     display: flex;
-    flex-flow: row wrap ;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
-.ImagenProductos {   
-    height: 350px;
+
+.ImagenProductos {
+    height: 300px;
     width: auto;
     margin-top: 10px;
     border: 2px solid black;
     border-radius: 10px;
+    transition: transform 1.7s;
 }
+
+.ImagenProductos:hover {
+    transform: scale(1.2);
+}
+
 .InfoTazas {
     height: 50px;
     width: 100%;
     margin-bottom: 10px;
-    
+
 }
+
 article p {
     width: 100%;
     background-color: beige;
-   padding: 10px;
-   font-family: 'Merriweather', serif;
-   text-align: center;
-   border: 2px solid black;
-   border-radius: 5px;
+    padding: 10px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
 }
-.ImagenTorno{
+
+.ImagenTorno {
     text-align: center;
 }
+
 .Torno {
     height: auto;
     width: 80%;
-    
+
 }
-.VideoTorno{
-    height: 450px;    
+
+.VideoTorno {
+    height: 450px;
     margin-top: 20px;
     text-align: center;
 }
-.SobreMi{
+
+.SobreMi {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
 }
-.TituloSobreMi{
+
+.TituloSobreMi {
     height: 50px;
     width: 100%;
 }
+
 .ImgSobreMi {
     height: 300px;
     width: 300px;
     margin-bottom: 15px;
     border: 3px solid black;
-    border-radius: 5px;   
+    border-radius: 5px;
+
 }
 
 
 
 
 
-
-@media only screen and (max-width: 720px){
-    header a{
+@media only screen and (max-width: 720px) {
+    header a {
         display: none;
     }
-    .foto{
+
+    .foto {
         margin-left: 0%;
         margin-right: 0%;
     }
+
     #carouselExampleIndicators {
         background-color: rgb(0, 0, 0);
     }
+
     .col-6 {
         max-width: 100%;
     }
-    .ImagenProductos{
+
+    .ImagenProductos {
         height: 300px;
         width: 100%;
     }
+
     iframe {
         height: 250px;
         width: 80%;
     }
-    .SobreMi{
+
+    .SobreMi {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-    }    
-   
-} 
+    }
+
+
+}
+
 @media only screen and (max-width: 420px) {
-    .TextoInicio{
-        
+    .TextoInicio {
+
         margin: 0px;
         padding: 10px;
         border-top: 2px solid gray;
@@ -199,32 +265,38 @@ article p {
         width: auto;
         margin-bottom: 15px;
         border: 3px solid black;
-        border-radius: 5px;   
+        border-radius: 5px;
     }
-    .ImagenProductos{
+
+    .ImagenProductos {
         height: 150px;
         width: 100%;
     }
-    .item1{
+
+    .item1 {
         margin-top: 35px;
     }
-    .item2{
+
+    .item2 {
         margin-top: 35px;
-    }  
-    
-    textarea{ 
+    }
+
+    textarea {
         width: 100%;
     }
 
 }
-@media only screen and (max-width: 360px){
-    .ImagenProductos{
+
+@media only screen and (max-width: 360px) {
+    .ImagenProductos {
         height: 250px;
         width: 100%;
     }
+
     .item3 {
         height: 200px;
     }
+
     section h2 {
         font-size: 22px;
         text-align: center;
@@ -232,14 +304,16 @@ article p {
         padding-bottom: 20px;
         text-decoration: underline;
         width: 100%;
-        
+
     }
+
     section p {
         font-size: 14px;
         padding-left: 20px;
         padding-right: 20px;
-        font-family:'Times New Roman', Times;
+        font-family: 'Times New Roman', Times;
     }
+
     .iframe {
         height: 250px;
         width: 100%;
