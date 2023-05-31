@@ -5,16 +5,23 @@ font-family: 'Alkatra', cursive;
 font-family: 'Merriweather', serif;
 font-family: 'Roboto Slab', serif;
 */
+$color1: rgb(182, 212, 187);
+$color2: #f1e7c5;
+$color3: #f0cdab;
+$aparecer: aparece;
 
 * {
     margin: 0;
     padding: 0;
 }
+html{
+    height: 100%;
+}
 
 header {
     height: 130px;
     padding: 35px;
-    background-color: aquamarine;
+    background-color: $color1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,7 +29,11 @@ header {
 }
 
 body {
-    background-color: gray;
+    background-color: $color3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+ 
 }
 
 h1 {
@@ -83,7 +94,7 @@ h1 span {
 }
 
 .barra {
-    background-color: beige;
+    background-color: $color2;
 }
 
 .nav-item {
@@ -91,7 +102,9 @@ h1 span {
 }
 
 .MainInicio {
-    background-color: grey;
+    background-color: $color3;
+
+
 }
 
 .foto {
@@ -105,7 +118,7 @@ h1 span {
 }
 
 .TextoInicio {
-    background-color: beige;
+    background-color: $color2;
     margin: 40px;
     padding: 20px;
     box-shadow: 3px 3px 3px black;
@@ -128,17 +141,22 @@ section p {
 }
 
 .FooterInicio {
-    background-color: aquamarine;
+    background-color: $color1;
+      
+   margin-top: auto;
 
 }
 
 footer h3 {
     text-align: center;
+    
     padding: 30px;
+    margin-bottom: 0px;
 }
 
 .SectionProductos {
-    background-color: gray;
+    background-color: $color3;
+    
     padding: 20px;
     display: flex;
     flex-flow: row wrap;
@@ -154,6 +172,7 @@ footer h3 {
     transition: transform 1.7s;
 }
 
+
 .ImagenProductos:hover {
     transform: scale(1.2);
 }
@@ -162,17 +181,23 @@ footer h3 {
     height: 50px;
     width: 100%;
     margin-bottom: 10px;
+}
+
+article {
+    
+    background-color: $color2;
+    border: 2px solid black;
+    border-radius: 5px;
 
 }
 
 article p {
     width: 100%;
-    background-color: beige;
-    padding: 10px;
+    background-color: $color2;
+  
     font-family: 'Merriweather', serif;
     text-align: center;
-    border: 2px solid black;
-    border-radius: 5px;
+    padding-top: 10px;
 }
 
 .ImagenTorno {
@@ -212,12 +237,14 @@ article p {
 }
 
 
-
-
-
 @media only screen and (max-width: 720px) {
     header a {
         display: none;
+      
+    }
+    header h1 {
+        text-align: center;
+        font-size: 28px;
     }
 
     .foto {

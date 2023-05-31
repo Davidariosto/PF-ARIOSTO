@@ -9,17 +9,24 @@ font-family: 'Roboto Slab', serif;
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 header {
   height: 130px;
   padding: 35px;
-  background-color: aquamarine;
+  background-color: rgb(182, 212, 187);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 body {
-  background-color: gray;
+  background-color: #f0cdab;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 h1 {
@@ -75,7 +82,7 @@ h1 span {
 }
 
 .barra {
-  background-color: beige;
+  background-color: #f1e7c5;
 }
 
 .nav-item {
@@ -83,7 +90,7 @@ h1 span {
 }
 
 .MainInicio {
-  background-color: grey;
+  background-color: #f0cdab;
 }
 
 .foto {
@@ -96,7 +103,7 @@ h1 span {
 }
 
 .TextoInicio {
-  background-color: beige;
+  background-color: #f1e7c5;
   margin: 40px;
   padding: 20px;
   box-shadow: 3px 3px 3px black;
@@ -118,16 +125,18 @@ section p {
 }
 
 .FooterInicio {
-  background-color: aquamarine;
+  background-color: rgb(182, 212, 187);
+  margin-top: auto;
 }
 
 footer h3 {
   text-align: center;
   padding: 30px;
+  margin-bottom: 0px;
 }
 
 .SectionProductos {
-  background-color: gray;
+  background-color: #f0cdab;
   padding: 20px;
   display: flex;
   flex-flow: row wrap;
@@ -153,14 +162,18 @@ footer h3 {
   margin-bottom: 10px;
 }
 
-article p {
-  width: 100%;
-  background-color: beige;
-  padding: 10px;
-  font-family: "Merriweather", serif;
-  text-align: center;
+article {
+  background-color: #f1e7c5;
   border: 2px solid black;
   border-radius: 5px;
+}
+
+article p {
+  width: 100%;
+  background-color: #f1e7c5;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .ImagenTorno {
@@ -200,6 +213,10 @@ article p {
 @media only screen and (max-width: 720px) {
   header a {
     display: none;
+  }
+  header h1 {
+    text-align: center;
+    font-size: 28px;
   }
   .foto {
     margin-left: 0%;
